@@ -1,3 +1,4 @@
+<!--公共头-->
 <div class="wmm-header_wrap">
     <a href="/" class="wmm-header_left">{{site.name}}</a>
     <div class="wmm-header_right">
@@ -8,10 +9,14 @@
         {% endfor %}
     </div>
 </div>
+
+<!--公共nav-->
 <div class="wmm-nav">
-    <img class="wmm-nav_bg" src="{{ site.baseurl }}/assets/images/{% if page.bg %}{{page.bg}}{% else %}default-bg.jpg{% endif %}" alt=""/>
+    <img class="wmm-nav_bg"
+         src="{{ site.baseurl }}/assets/images/{% if page.background %}{{page.background}}{% else %}default-bg.jpg{% endif %}" alt=""/>
 
     {% if page.layout == 'author' %}
+    <!--作者模块-->
     <div class="wmm-nav_wrap">
         <h3 class="wmm-nav_title">{{ page.short_name }}</h3>
         <p class="wmm-nav_tag">{{ page.name }} - {{page.position}}</p>
@@ -19,26 +24,32 @@
     {% endif %}
 
     {% if page.layout == 'default' %}
+    <!--默认模块-->
     <div class="wmm-nav_wrap">
-        <h3 class="wmm-nav_title">{{ site.name }}</h3>
-        <p class="wmm-nav_date">{{site.description}}</p>
+        <h3 class="wmm-nav_title">
+            {% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}
+        </h3>
+        <p class="wmm-nav_date">
+            {% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
+        </p>
     </div>
     {% endif %}
 
     {% if page.layout == 'post' %}
+    <!--帖子模块-->
     <div class="wmm-nav_wrap">
         <h3 class="wmm-nav_title">{{ page.title }}</h3>
         <p class="wmm-nav_date">
             <span>发表于： {{ page.date | date:"%Y-%m-%d %H:%M:%S" }}</span>
             {% assign author = site.authors | where: 'short_name', page.author | first %}
             {% if author %}
-            <a href="{{ author.url }}"> with {{ author.short_name }}</a>
+            <a href="{{ author.url }}"> by {{ author.short_name }}</a>
             {% endif %}
         </p>
         <p class="wmm-nav_tag">分类于：{{ page.category }}</p>
 
         <p class="wmm-nav_tag" id="busuanzi_container_page_pv">
-            阅读次数：<span id="busuanzi_value_page_pv"></span>次
+            阅读：<span id="busuanzi_value_page_pv"></span>次
         </p>
     </div>
     {% endif %}

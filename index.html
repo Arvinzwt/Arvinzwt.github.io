@@ -15,7 +15,7 @@ bg: default-bg.jpg
                     {{ post.excerpt }}
                 </div>
                 <p class="wmm-main-home_footer">
-                    <span class="wmm-main-home_footer_item">posted @{{ post.date | date:"%Y-%m-%d %H:%M:%S" }}·{{ post.author }}</span>
+                    <span class="wmm-main-home_footer_item">posted @{{ post.date | date:"%Y-%m-%d %H:%M:%S" }} by {{ post.author }}</span>
                 </p>
             </a>
         </li>
@@ -23,29 +23,31 @@ bg: default-bg.jpg
     </ul>
 
     {% if paginator.total_pages > 1 %}
-        <div class="wmm-pagination">
-            {% if paginator.previous_page %}
-            <a class="wmm-pagination_item" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-            {% else %}
-            <span class="wmm-pagination_item">&laquo; Prev</span>
-            {% endif %}
+    <!--分页-->
+    <div class="wmm-pagination">
+        {% if paginator.previous_page %}
+        <a class="wmm-pagination_item" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+        {% else %}
+        <span class="wmm-pagination_item">&laquo; Prev</span>
+        {% endif %}
 
 
-            {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <em class="wmm-pagination_item">{{ page }}</em>
-            {% elsif page == 1 %}
-            <a class="wmm-pagination_item" href="{{ '/' | relative_url }}">{{ page }}</a>
-            {% else %}
-            <a class="wmm-pagination_item" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-            {% endfor %}
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em class="wmm-pagination_item">{{ page }}</em>
+        {% elsif page == 1 %}
+        <a class="wmm-pagination_item" href="{{ '/' | relative_url }}">{{ page }}</a>
+        {% else %}
+        <a class="wmm-pagination_item" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page
+            }}</a>
+        {% endif %}
+        {% endfor %}
 
-            {% if paginator.next_page %}
-            <a class="wmm-pagination_item" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-            {% else %}
-            <span class="wmm-pagination_item">Next &raquo;</span>
-            {% endif %}
-        </div>
+        {% if paginator.next_page %}
+        <a class="wmm-pagination_item" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+        {% else %}
+        <span class="wmm-pagination_item">Next &raquo;</span>
+        {% endif %}
+    </div>
     {% endif %}
 </div>

@@ -24,6 +24,7 @@ $mobileWidth: 640px;
 }
 
 .wmm-body {
+    min-height: 100vh;
     line-height: 1.8;
     font-family: $navFont;
     font-weight: 400;
@@ -113,7 +114,7 @@ $mobileWidth: 640px;
     }
 
     .wmm-main {
-
+        @include flex-1;
     }
 
     .wmm-footer {
