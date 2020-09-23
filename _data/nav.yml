@@ -1,0 +1,11 @@
+- name: 首页
+  link: /
+- name: 分类
+  link: /pages/blog
+- name: 成员
+  link: /pages/staff
+- name: 关于
+  link: /pages/about
+- name: 订阅
+  link: /feed.xml
+

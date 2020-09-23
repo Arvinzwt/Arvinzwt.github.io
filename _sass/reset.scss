@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+header, nav, footer, menu, section, article, aside, details, figcaption, figure, hgroup {
+    display: block;
+    clear: both;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: $blue;
+    cursor: pointer;
+
+    :active {
+        outline: 0;
+    }
+}
+
+ul, ol {
+    list-style: none outside none;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+img {
+    border: 0;
+}
+
+@mixin flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -moz-flex;
+    display: flex;
+}
+
+@mixin flex-v {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@mixin flex-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@mixin flex-align-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@mixin flex-pack-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin flex-pack-justify {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@mixin flex-pack-end {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@mixin flex-wrap {
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin reset-scrollbar {
+    //滚动条
+    ::-webkit-scrollbar {
+        width: 6px;
+        background: transparent;
+    }
+
+    //滚动条的轨道
+    ::-webkit-scrollbar-track {
+        background: $lightGray;
+
+    }
+
+    //滚动条里面的小方块
+    ::-webkit-scrollbar-thumb {
+        background: $gray;
+        border-radius: 4px;
+    }
+
+    //滚动条里面的小方块划过
+    ::-webkit-scrollbar-thumb:hover {
+        background: $darkerGray;
+    }
+
+    //边角，即两个滚动条的交汇处
+    ::-webkit-scrollbar-corner {
+        background: $lightGray;
+    }
+
+    //滚动条的轨道的两端按钮
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    //内层轨道，滚动条中间部分
+    ::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+
+    //两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+    ::-webkit-resizer {
+        display: none;
+    }
+}
+
+@mixin ellipsis{
+    overflow:hidden; //超出的文本隐藏
+    text-overflow:ellipsis; //溢出用省略号显示
+    white-space:nowrap; //溢出不换行
+}

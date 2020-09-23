@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% if page.title %} {{ page.title }} {% elsif site.name %} {{ site.name }} {% endif %}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+</head>
+<body class="wmm-body">
+<header class="wmm-header">
+    {% include header.html %}
+</header>
+<main class="wmm-main">
+    {{content}}
+</main>
+<footer class="wmm-footer">
+    <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery">Copyright ©2020 arvin · 豫ICP备19018626号</a>
+</footer>
+{% include analytics.html %}
+
+</body>
+</html>

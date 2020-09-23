@@ -1,0 +1,21 @@
+---
+layout: default
+title: Staff
+permalink: /pages/staff.html
+---
+<div class="wmm-main-staff">
+    <ul>
+        {% for author in site.authors %}
+        <li>
+            <h2 class="wmm-main-staff_title">
+                <a href="{{ author.url }}">
+                    <span class="iconfont iconshuxian"></span>
+                    <span>{{ author.name }}</span>
+                    <span>{{ author.position }}</span>
+                </a>
+            </h2>
+            <div class="wmm-main-staff_depict">{{ author.content | markdownify }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
