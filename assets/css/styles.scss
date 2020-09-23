@@ -95,12 +95,10 @@ $mobileWidth: 640px;
 
                 .wmm-nav_title {
                     font-size: $mainTitleFontSize;
-                    margin-bottom: 18px;
                 }
 
                 .wmm-nav_date {
                     font-size: $auxiliaryFontSize;
-                    margin-bottom: 18px;
 
                     a {
                         color: $white;
@@ -300,5 +298,13 @@ $mobileWidth: 640px;
 
     .wmm-pagination_item {
         margin-right: 10px;
+    }
+}
+
+
+#busuanzi_container_site_pv {
+    .iconfont {
+        vertical-align: middle;
+        font-size: $auxiliaryFontSize;
     }
 }

@@ -15,9 +15,6 @@ avatar: # https://avatars2.githubusercontent.com/u/29627730?s=460&u=80a11f1ed007
 # 您的网站网址 用于Sitemap.xml和您的RSS feed（例如http://barryclark.github.io或http://www.barryclark.co）
 url: https://arvinzwt.github.io/
 
-# 是否开启Google Analytics功能 如果开启，需要在/includes/analytics上修改配置
-google_analytics: true
-
 # 是否开启评论功能 如果开启，需要在/includes/gitalk上修改配置
 gitalk: true
 

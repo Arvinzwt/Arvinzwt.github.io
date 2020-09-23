@@ -29,14 +29,17 @@
     <div class="wmm-nav_wrap">
         <h3 class="wmm-nav_title">{{ page.title }}</h3>
         <p class="wmm-nav_date">
-            <span>Published on {{ page.date | date:"%Y-%m-%d %H:%M:%S" }} with </span>
-
+            <span>发表于： {{ page.date | date:"%Y-%m-%d %H:%M:%S" }}</span>
             {% assign author = site.authors | where: 'short_name', page.author | first %}
             {% if author %}
-            <a href="{{ author.url }}">{{ author.short_name }}</a>
+            <a href="{{ author.url }}"> with {{ author.short_name }}</a>
             {% endif %}
         </p>
-        <p class="wmm-nav_tag">分类：{{ page.category }}</p>
+        <p class="wmm-nav_tag">分类于：{{ page.category }}</p>
+
+        <p class="wmm-nav_tag" id="busuanzi_container_page_pv">
+            阅读次数：<span id="busuanzi_value_page_pv"></span>次
+        </p>
     </div>
     {% endif %}
 </div>
