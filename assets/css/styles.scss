@@ -6,7 +6,7 @@
 
 // Mobile breakpoints
 $maxWidth: 1040px;
-$mobileWidth: 640px;
+$mobileWidth: 750px;
 
 @mixin mobile {
     @media screen and (max-width: $mobileWidth) {
@@ -17,6 +17,10 @@ $mobileWidth: 640px;
 @mixin wrap {
     width: $maxWidth;
     margin: 0 auto;
+
+    @include mobile {
+        width: auto;
+    }
 }
 
 * {
@@ -71,7 +75,6 @@ $mobileWidth: 640px;
             background-color: rgba(0, 0, 0, .5);
             position: relative;
             overflow: hidden;
-            min-width: $maxWidth;
             box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
 
             .wmm-nav_bg {
@@ -119,7 +122,9 @@ $mobileWidth: 640px;
 
     .wmm-footer {
         @include wrap;
-        text-align: center;
+        @include flex;
+        @include flex-align-center;
+        @include flex-pack-center;
         font-size: $auxiliaryFontSize;
         padding: 30px 0;
 
@@ -127,12 +132,41 @@ $mobileWidth: 640px;
             color: $darkerGray;
         }
     }
+
+    @include mobile {
+        line-height: 1.6;
+        font-size: $smallTextFontSize;
+
+        .wmm-header {
+            .wmm-header_wrap {
+                height: 50px;
+            }
+
+            .wmm-nav {
+                height: 200px;
+
+                .wmm-nav_bg {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+
+        .wmm-footer {
+            @include flex-v;
+        }
+    }
 }
 
 .wmm-main-about {
     @include wrap;
-    padding: 20px 15px;
+    @include border-box;
     font-size: $littleTitleFontSize;
+
+    h2 {
+        font-size: $mainTitleFontSize;
+        margin: 50px 20px 15px;
+    }
 
     ul {
         margin-left: 40px;
@@ -142,9 +176,14 @@ $mobileWidth: 640px;
         }
     }
 
-    h2 {
-        font-size: $mainTitleFontSize;
-        margin: 10px 0;
+
+    @include mobile {
+        padding: 0;
+        font-size: $textFontSize;
+        h2 {
+            font-size: $titleFontSize;
+            margin: 30px 15px 10px;
+        }
     }
 }
 
@@ -190,6 +229,23 @@ $mobileWidth: 640px;
             font-size: $textFontSize;
         }
     }
+
+    @include mobile {
+        @include flex-v;
+        .wmm-main-author_title {
+            font-size: $titleFontSize;
+            padding: 8px 15px;
+        }
+        .wmm-main-author_post_title {
+            font-size: $textFontSize;
+        }
+        .wmm-main-author_post_date {
+            font-size: $textFontSize;
+        }
+        .iconfont {
+            vertical-align: middle;
+        }
+    }
 }
 
 .wmm-main-blog {
@@ -209,7 +265,25 @@ $mobileWidth: 640px;
 
     h2 {
         font-size: $mainTitleFontSize;
-        margin: 10px 0;
+        margin: 20px 0 10px;
+    }
+
+    @include mobile {
+        font-size: $textFontSize;
+        h2 {
+            font-size: $titleFontSize;
+            margin: 30px 15px 10px;
+        }
+        li {
+            @include flex;
+            @include flex-v;
+
+            span {
+                color: $gray;
+                margin-top: 5px;
+            }
+        }
+
     }
 }
 
@@ -260,11 +334,28 @@ $mobileWidth: 640px;
             white-space: nowrap;
         }
     }
+
+    @include mobile {
+        width: 100%;
+        .wmm-main-home_item {
+            margin: 20px 15px;
+            padding: 20px;
+
+            .wmm-main-home_title {
+                font-size: $littleTitleFontSize;
+                margin-bottom: 10px;
+            }
+
+            .wmm-main-home_excerpt {
+                font-size: $smallTextFontSize;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 .wmm-main-staff {
     @include wrap;
-    padding: 20px;
 
     .wmm-main-staff_title {
         font-size: $mainTitleFontSize;
@@ -280,6 +371,18 @@ $mobileWidth: 640px;
     a {
         color: $darkerGray;
     }
+
+    @include mobile {
+        .wmm-main-staff_title {
+            font-size: $titleFontSize;
+            padding: 25px 15px 10px;
+        }
+        .wmm-main-staff_depict {
+            font-size: $smallTextFontSize;
+            padding: 0;
+            padding-left: 43px;
+        }
+    }
 }
 
 .wmm-main-404 {
@@ -288,7 +391,7 @@ $mobileWidth: 640px;
 
 .wmm-main-post {
     @include wrap;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 .wmm-pagination {
