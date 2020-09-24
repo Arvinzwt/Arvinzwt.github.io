@@ -149,6 +149,12 @@ $mobileWidth: 750px;
                     height: 100%;
                     width: auto;
                 }
+
+                .wmm-nav_wrap {
+                    padding-left: 0;
+                    left: 10%;
+                    -webkit-transform: translate(0, -50%);
+                }
             }
         }
 
