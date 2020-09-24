@@ -9,6 +9,9 @@ name: 随手记
 # 简短的个人简介或说明（显示在标题中）
 description: 不知则问，不能则学
 
+#邮箱
+email:
+
 # 头像
 avatar: # https://avatars2.githubusercontent.com/u/29627730?s=460&u=80a11f1ed00701422eabaa9ed5e85c11adb61bae&v=4
 
