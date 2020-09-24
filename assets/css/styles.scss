@@ -15,12 +15,12 @@ $mobileWidth: 750px;
 }
 
 @mixin wrap {
-    width: $maxWidth;
+    max-width: $maxWidth;
     margin: 0 auto;
 
-    @include mobile {
-        width: auto;
-    }
+    //@include mobile {
+    //    width: auto;
+    //}
 }
 
 * {
@@ -43,74 +43,57 @@ $mobileWidth: 750px;
     .wmm-header {
         background-color: white;
         font-size: $textFontSize;
-        //transition: 0.5s ease-in-out;
-        //box-shadow: $basicShadow;
 
         .wmm-header_wrap {
+            height: 70px;
             @include wrap;
             @include flex;
             @include flex-align-center;
             @include flex-pack-justify;
-            height: 70px;
-
-            .wmm-header_left {
-                padding: 0 15px;
-                font-weight: bold;
-                color: #333333;
-            }
-
-            .wmm-header_right {
-
-            }
 
             .wmm-header_item {
-                padding: 0 15px;
+                margin: 0 15px;
+                font-weight: bold;
                 color: $darkerGray;
             }
         }
 
         .wmm-nav {
-            display: block;
-            height: 300px;
             background-color: rgba(0, 0, 0, .5);
-            position: relative;
-            overflow: hidden;
             box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+            position: relative;
 
             .wmm-nav_bg {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
-                width: 100%;
-                height: auto;
+                max-height: 300px;
+                overflow: hidden;
+
+                img {
+
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             .wmm-nav_wrap {
                 position: absolute;
                 color: $white;
-                left: 50%;
-                top: 60%;
-                transform: translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
-                padding-left: 200px;
-                @include wrap;
+                z-index: 10;
+                left: 15%;
+                bottom: 20%;
 
-                .wmm-nav_title {
-                    font-size: $mainTitleFontSize;
-                }
+                .wmm-nav_item {
+                    h3 {
+                        font-size: $mainTitleFontSize;
+                    }
 
-                .wmm-nav_date {
-                    font-size: $auxiliaryFontSize;
+                    p {
+                        font-size: $auxiliaryFontSize;
+                    }
 
                     a {
                         color: $white;
                     }
-                }
-
-                .wmm-nav_tag {
-                    font-size: $auxiliaryFontSize;
                 }
             }
         }
@@ -121,7 +104,6 @@ $mobileWidth: 750px;
     }
 
     .wmm-footer {
-        @include wrap;
         @include flex;
         @include flex-align-center;
         @include flex-pack-center;
@@ -131,47 +113,37 @@ $mobileWidth: 750px;
         a {
             color: $darkerGray;
         }
+
+        #busuanzi_container_site_pv {
+            .iconfont {
+                vertical-align: middle;
+                font-size: $auxiliaryFontSize;
+            }
+        }
     }
 
     @include mobile {
         line-height: 1.6;
         font-size: $smallTextFontSize;
-
         .wmm-header {
             .wmm-header_wrap {
                 height: 50px;
             }
-
-            .wmm-nav {
-                height: 200px;
-
-                .wmm-nav_bg {
-                    height: 100%;
-                    width: auto;
-                }
-
-                .wmm-nav_wrap {
-                    padding-left: 0;
-                    left: 10%;
-                    -webkit-transform: translate(0, -50%);
-                }
-            }
         }
-
         .wmm-footer {
             @include flex-v;
         }
     }
 }
 
+
 .wmm-main-about {
     @include wrap;
     @include border-box;
-    font-size: $littleTitleFontSize;
 
     h2 {
         font-size: $mainTitleFontSize;
-        margin: 50px 15px 15px;
+        margin: 30px 15px 15px;
     }
 
     ul {
@@ -185,18 +157,18 @@ $mobileWidth: 750px;
 
 
     @include mobile {
-        padding: 0;
         font-size: $textFontSize;
         h2 {
             font-size: $titleFontSize;
-            margin: 30px 15px 10px;
-        }
-
-        #gitalk-container{
-            padding: 15px;
+            margin: 20px 15px 10px;
         }
     }
+
+    #gitalk-container {
+        padding: 15px;
+    }
 }
+
 
 .wmm-main-author {
     @include wrap;
@@ -208,11 +180,11 @@ $mobileWidth: 750px;
     }
 
     .wmm-main-author_post {
-        padding: 10px 0;
+        padding: 15px 0;
 
         .wmm-main-author_title {
-            font-size: $titleFontSize;
-            padding: 10px 15px;
+            font-size: $mainTitleFontSize;
+            padding: 0 15px 10px;
         }
 
         .wmm-main-author_post_item {
@@ -226,6 +198,7 @@ $mobileWidth: 750px;
         .wmm-main-author_post_title {
             max-width: 300px;
             @include ellipsis;
+            font-size: $littleTitleFontSize;
 
             &:hover {
                 color: $blue;
@@ -237,21 +210,21 @@ $mobileWidth: 750px;
             display: block;
             white-space: nowrap;
             padding-left: 25px;
-            font-size: $textFontSize;
+            font-size: $smallTextFontSize;
         }
     }
 
     @include mobile {
         @include flex-v;
         .wmm-main-author_title {
-            font-size: $titleFontSize;
+            font-size: $textFontSize;
             padding: 8px 15px;
         }
         .wmm-main-author_post_title {
-            font-size: $textFontSize;
+            font-size: $smallTextFontSize;
         }
         .wmm-main-author_post_date {
-            font-size: $textFontSize;
+            font-size: $auxiliaryFontSize;
         }
         .iconfont {
             vertical-align: middle;
@@ -262,11 +235,17 @@ $mobileWidth: 750px;
 .wmm-main-blog {
     @include wrap;
 
+    h2 {
+        font-size: $mainTitleFontSize;
+        margin: 30px 15px 15px;
+    }
+
     ul {
         margin-left: 40px;
 
         li {
             list-style: disc;
+            padding-right: 15px;
 
             span {
                 font-size: $auxiliaryFontSize;
@@ -274,28 +253,21 @@ $mobileWidth: 750px;
         }
     }
 
-    h2 {
-        font-size: $mainTitleFontSize;
-        margin: 20px 0 10px;
-    }
-
     @include mobile {
         font-size: $textFontSize;
         h2 {
             font-size: $titleFontSize;
-            margin: 30px 15px 10px;
+            margin: 20px 15px 10px;
         }
         li {
             @include flex;
             @include flex-v;
-            padding-right: 15px;
 
             span {
                 color: $gray;
                 margin-top: 5px;
             }
         }
-
     }
 }
 
@@ -371,13 +343,12 @@ $mobileWidth: 750px;
 
     .wmm-main-staff_title {
         font-size: $mainTitleFontSize;
-        padding: 20px;
+        padding: 20px 15px 8px;
     }
 
     .wmm-main-staff_depict {
         font-size: $textFontSize;
-        padding: 35px;
-        padding-top: 0;
+        padding: 0 15px 15px 40px;
     }
 
     a {
@@ -387,16 +358,15 @@ $mobileWidth: 750px;
     @include mobile {
         .wmm-main-staff_title {
             font-size: $titleFontSize;
-            padding: 25px 15px 10px;
+            padding: 18px 15px 5px;
         }
         .wmm-main-staff_depict {
             font-size: $smallTextFontSize;
-            padding: 0;
-            padding-left: 43px;
-            padding-right: 15px;
+            padding: 0 15px 0 43px;
         }
     }
 }
+
 
 .wmm-main-404 {
 
@@ -404,7 +374,7 @@ $mobileWidth: 750px;
 
 .wmm-main-post {
     @include wrap;
-    padding: 20px;
+    padding: 20px 15px;
 }
 
 .wmm-pagination {
@@ -415,13 +385,5 @@ $mobileWidth: 750px;
 
     .wmm-pagination_item {
         margin-right: 10px;
-    }
-}
-
-
-#busuanzi_container_site_pv {
-    .iconfont {
-        vertical-align: middle;
-        font-size: $auxiliaryFontSize;
     }
 }
