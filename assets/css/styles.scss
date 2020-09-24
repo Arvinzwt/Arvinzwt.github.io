@@ -171,7 +171,7 @@ $mobileWidth: 750px;
 
     h2 {
         font-size: $mainTitleFontSize;
-        margin: 50px 20px 15px;
+        margin: 50px 15px 15px;
     }
 
     ul {
@@ -179,6 +179,7 @@ $mobileWidth: 750px;
 
         li {
             list-style: disc;
+            padding-right: 15px;
         }
     }
 
@@ -190,6 +191,10 @@ $mobileWidth: 750px;
             font-size: $titleFontSize;
             margin: 30px 15px 10px;
         }
+
+        #gitalk-container{
+            padding: 15px;
+        }
     }
 }
 
@@ -199,7 +204,7 @@ $mobileWidth: 750px;
     @include flex-pack-justify;
 
     .wmm-main-author_depict {
-        padding: 20px 15px;
+        padding: 15px;
     }
 
     .wmm-main-author_post {
@@ -283,6 +288,7 @@ $mobileWidth: 750px;
         li {
             @include flex;
             @include flex-v;
+            padding-right: 15px;
 
             span {
                 color: $gray;
@@ -387,6 +393,7 @@ $mobileWidth: 750px;
             font-size: $smallTextFontSize;
             padding: 0;
             padding-left: 43px;
+            padding-right: 15px;
         }
     }
 }
