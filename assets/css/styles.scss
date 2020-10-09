@@ -376,17 +376,16 @@ $mobileWidth: 750px;
     @include wrap;
     padding: 20px 15px;
 
-    h1,h2,h3,h4,h5,h6{
+    h1, h2, h3, h4, h5, h6 {
         padding: 15px 0 8px;
     }
 
 
-
-    p,h4 {
+    p, h4 {
         text-indent: 30px;
     }
 
-    img{
+    img {
         display: block;
         width: 100%;
     }
@@ -397,6 +396,36 @@ $mobileWidth: 750px;
         background: #f7f8fb;
         padding: 15px;
         border-radius: 10px;
+    }
+
+    table {
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+        font-size: 13px;
+        border-collapse: collapse;
+
+        th, td {
+            padding: 6px 8px;
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f7f8fb;
+            font-weight: bolder;
+        }
+
+        td {
+
+        }
+    }
+
+    code {
+        display: block;
+        font-size: 13px;
+        padding: 20px;
+        margin: 20px;
+        background: #f7f8fb;
     }
 }
 

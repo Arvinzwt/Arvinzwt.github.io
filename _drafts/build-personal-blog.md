@@ -1,9 +1,12 @@
 ---
-author: arvin
-category: blog
 title: jekyll/GitPage搭建个人博客
+category: blog
 background: post-bg1.jpeg
+author: arvin
+excerpt: 记录一下这个博客是怎么搭建的
+date: 2020-09-29
 ---
+
 
 ### 1.为啥搭建博客
 这个博客刚搭建好的时候，我就和基友和女票说，来呀来呀，一起快活啊~~ 然后得到了n双白眼，再然后我就笃定的知道了自己有一个能够没事瞎写东西，也不会让熟人知道的地方~~

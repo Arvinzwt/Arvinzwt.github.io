@@ -13,6 +13,10 @@ $ bundle exec jekyll b
 $ bundle exec jekyll serve
 $ bundle exec jekyll s
 
+# 启动并监听本地提供服务+草稿。
+$ bundle exec jekyll serve --drafts
+$ bundle exec jekyll s --drafts
+
 # 删除所有生成的文件：目标文件夹，元数据文件，Sass和Jekyll缓存
 $ bundle exec jekyll clean
 
