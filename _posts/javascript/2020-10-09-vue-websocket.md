@@ -1,9 +1,9 @@
 ---
 title: vue+websocket模拟即时通讯
-category: vue
+category: javascript
 background: post-bg2.jpeg
 author: arvin
-excerpt: 类似于qq相互通信
+excerpt: 这是使用vue+websocket模拟即时通讯的demo
 ---
 
 ### 什么是WebSocket?
