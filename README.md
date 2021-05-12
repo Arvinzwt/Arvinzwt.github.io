@@ -1,31 +1,54 @@
-# Blog
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby minimal starter
+</h1>
 
-> My cat&#39;s pajamas jekyll project
+## 🚀 Quick start
 
-## 常用指令
+1.  **Create a Gatsby site.**
 
-```bash
-# 建设静态网站。
-$ bundle exec jekyll build
-$ bundle exec jekyll b
+    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
-# 启动并监听本地提供服务。
-$ bundle exec jekyll serve
-$ bundle exec jekyll s
+    ```shell
+    # create a new Gatsby site using the minimal starter
+    npm init gatsby
+    ```
 
-# 启动并监听本地提供服务+草稿。
-$ bundle exec jekyll serve --drafts
-$ bundle exec jekyll s --drafts
+2.  **Start developing.**
 
-# 删除所有生成的文件：目标文件夹，元数据文件，Sass和Jekyll缓存
-$ bundle exec jekyll clean
+    Navigate into your new site’s directory and start it up.
 
-# 显示帮助，可选地显示给定的子命令，例如 jekyll help build
-$ bundle exec jekyll help
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-# 输出任何弃用或配置问题
-$ bundle exec jekyll doctor
+3.  **Open the code and start customizing!**
 
-```
+    Your site is now running at http://localhost:8000!
 
-有关工作原理的详细说明，请查看 [jekyllrb](https://jekyllrb.com/docs/ruby-101/).
+    Edit `src/pages/index.js` to see your site update in real-time!
+
+4.  **Learn more**
+
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 🚀 Quick start (Gatsby Cloud)
+
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
