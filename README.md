@@ -5,6 +5,9 @@
 ## 常用指令
 
 ```bash
+# 初始安装执行包
+$ bundle install
+
 # 建设静态网站。
 $ bundle exec jekyll build
 $ bundle exec jekyll b
