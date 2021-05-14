@@ -2,66 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8461473-b84d-4c41-8dc0-6e83c53bec06" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/blog-post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/typography.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_authors/arvin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_authors/nereus.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/nav.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_drafts/build-personal-blog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/gitalk.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/author.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/javascript/2020-10-09-vue-websocket.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/javascript/2020-10-10-nuxt-auth.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/javascript/2020-10-10-webrtc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/javascript/2020-12-21-vue-socket.io.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/match-colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/about-bg.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-bg.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog/m1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/default-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/post-bg1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/post-bg2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/post-bg3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/post-bg4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/post-bg5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (10).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (11).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (12).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (13).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (14).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (15).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (16).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (17).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (7).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (8).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/true (9).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/staff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -70,6 +42,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1sQZNONfKhUtCQLjzttieHtRtdx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -83,17 +63,27 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="所有位置" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/posts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/posts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/style" />
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.develop">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -133,6 +123,11 @@
       <option name="presentableId" value="Default" />
       <updated>1620806733199</updated>
       <workItem from="1620806734364" duration="3143000" />
+      <workItem from="1620889072846" duration="4040000" />
+      <workItem from="1620894274249" duration="433000" />
+      <workItem from="1620894710442" duration="1000" />
+      <workItem from="1620899995911" duration="2527000" />
+      <workItem from="1620902893267" duration="10300000" />
     </task>
     <servers />
   </component>
@@ -161,11 +156,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/aaaa" />
+      <path value="$PROJECT_DIR$/arvinzwt.github.io.blog" />
+      <path value="$PROJECT_DIR$/my-gatsby-site" />
     </ignored-roots>
   </component>
 </project>
