@@ -1,3 +1,33 @@
+@import "./reset.scss";
+
 html {
     background-color: lavenderblush;
 }
+
+.wmm {
+    //border: 1px solid red;
+    .wmm-header {
+        padding: 10px 20px;
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .right {
+        }
+    }
+
+    .wmm-content {
+
+    }
+
+    .wmm-footer {
+
+    }
+}
+
