@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8461473-b84d-4c41-8dc0-6e83c53bec06" name="默认变更列表" comment="初始模板">
-      <change afterPath="$PROJECT_DIR$/src/style/reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/basis.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/reset.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +75,7 @@
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -114,7 +123,14 @@
       <workItem from="1620894274249" duration="433000" />
       <workItem from="1620894710442" duration="1000" />
       <workItem from="1620899995911" duration="2527000" />
-      <workItem from="1620902893267" duration="12816000" />
+      <workItem from="1620902893267" duration="14807000" />
+      <workItem from="1620976580537" duration="2192000" />
+      <workItem from="1620983577400" duration="68000" />
+      <workItem from="1620983649156" duration="3000" />
+      <workItem from="1620983669200" duration="2000" />
+      <workItem from="1620984683903" duration="4038000" />
+      <workItem from="1621506213437" duration="1690000" />
+      <workItem from="1624427073848" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="初始模板">
       <created>1620971976421</created>
@@ -140,7 +156,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/gatsby" />
                       </list>
                     </value>
                   </entry>

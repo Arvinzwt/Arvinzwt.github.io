@@ -1,6 +1,7 @@
 ---
 title: "Sweet pandas eating sweets"
 date: "2021-05-12"
+tags: ["animals", "Chicago", "zoos"]
 ---
 
 Pandas are really sweet.

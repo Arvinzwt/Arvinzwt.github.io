@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "随记",
+        title: "精锐教育",
     },
     plugins: [
         "gatsby-plugin-sass",//scss文件支持
