@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8461473-b84d-4c41-8dc0-6e83c53bec06" name="默认变更列表" comment="初始模板">
-      <change afterPath="$PROJECT_DIR$/src/images/icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/basis.scss" afterDir="false" />
+    <list default="true" id="a8461473-b84d-4c41-8dc0-6e83c53bec06" name="默认变更列表" comment="初始模板3">
+      <change afterPath="$PROJECT_DIR$/src/pages/files.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/basic.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/basis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/typography.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -60,7 +73,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="所有位置" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/style" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -68,15 +82,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/style" />
       <recent name="$PROJECT_DIR$/src/pages/posts" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/static" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.develop">
@@ -90,7 +106,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="develop" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="develop" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -100,13 +116,24 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.build" />
       <item itemvalue="npm.develop" />
+      <item itemvalue="npm.serve" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.develop" />
+        <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +158,9 @@
       <workItem from="1620984683903" duration="4038000" />
       <workItem from="1621506213437" duration="1690000" />
       <workItem from="1624427073848" duration="384000" />
+      <workItem from="1625034569541" duration="3609000" />
+      <workItem from="1625038225404" duration="3359000" />
+      <workItem from="1625041682564" duration="12859000" />
     </task>
     <task id="LOCAL-00001" summary="初始模板">
       <created>1620971976421</created>
@@ -177,6 +207,7 @@
       <path value="$PROJECT_DIR$/my-gatsby-site" />
     </ignored-roots>
     <MESSAGE value="初始模板" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始模板" />
+    <MESSAGE value="初始模板3" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始模板3" />
   </component>
 </project>

@@ -1,9 +1,13 @@
 const path = require(`path`)
 const {createFilePath} = require(`gatsby-source-filesystem`)
 
+// 为页面创建 slug
 exports.onCreateNode = ({node, getNode, actions}) => {
+    // 改函数能在其他插件创建的节点里创建其他字段
     const {createNodeField} = actions
-    if (node.internal.type === `Mdx`) {
+
+    if (node.internal.type === 'Mdx') {
+        // 通过文件命创建文件slug
         const slug = createFilePath({node, getNode, basePath: `pages`})
         createNodeField({
             node,
@@ -12,28 +16,29 @@ exports.onCreateNode = ({node, getNode, actions}) => {
         })
     }
 }
-exports.createPages = async ({graphql, actions}) => {
-    const {createPage} = actions
+
+// 创建页面
+exports.createPages = async ({ graphql, actions }) => {
+    const { createPage } = actions
     const result = await graphql(`
-    query {
-      allMdx {
-        edges {
-          node {
-            fields {
-              slug
+        query {
+          allMdx {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+              }
             }
           }
-        }
-      }
-    }
-  `)
-    result.data.allMdx.edges.forEach(({node}) => {
+        }`)
+
+    // 循环slug并根据自定义模板创建页面
+    result.data.allMdx.edges.forEach(({ node }) => {
         createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/templates/blog-post.js`),
+            component: path.resolve(`./src/templates/blog.js`),
             context: {
-                // Data passed to context is available
-                // in page queries as GraphQL variables.
                 slug: node.fields.slug,
             },
         })
