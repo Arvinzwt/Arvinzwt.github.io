@@ -12,11 +12,11 @@ export default function Layout({children}) {
                 <Link to="/" className="ml-2">{data.site.siteMetadata.title}</Link>
             </h3>
             <h3 className='right'>
-                <input type="text"/>
                 <Link to="/" className="ml-4">首页</Link>
                 <Link to="/archives" className="ml-4">目录</Link>
                 <Link to="/about" className="ml-4">关于</Link>
                 <a href="https://github.com/Arvinzwt/Arvinzwt.github.io" className="ml-4">GitHub</a>
+                <StaticImage src="../images/icon-search.png" alt="icon" className="ml-4" width={18} height={18}/>
             </h3>
         </header>
         <main className='wmm-content'>

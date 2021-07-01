@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8461473-b84d-4c41-8dc0-6e83c53bec06" name="默认变更列表" comment="初始模板3">
-      <change afterPath="$PROJECT_DIR$/src/pages/files.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/basic.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/tags.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts/pandas-and-bananas.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/posts/sweet-pandas-eating-sweets.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/basis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/blog-post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/typography.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -73,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="所有位置" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -82,11 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/style" />
-      <recent name="$PROJECT_DIR$/src/pages/posts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -160,7 +143,8 @@
       <workItem from="1624427073848" duration="384000" />
       <workItem from="1625034569541" duration="3609000" />
       <workItem from="1625038225404" duration="3359000" />
-      <workItem from="1625041682564" duration="12859000" />
+      <workItem from="1625041682564" duration="22050000" />
+      <workItem from="1625130386413" duration="1879000" />
     </task>
     <task id="LOCAL-00001" summary="初始模板">
       <created>1620971976421</created>
@@ -169,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620971976421</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始模板3">
+      <created>1625108744928</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625108744928</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
