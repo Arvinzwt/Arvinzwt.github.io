@@ -23,7 +23,6 @@ export default function Layout({children}) {
             <div className='wmm-main'>
                 {children}
             </div>
-
             <footer className='wmm-footer'>
                 <div className="wrap">
                     <p>Copyright ©2020 arvin</p>
@@ -34,6 +33,5 @@ export default function Layout({children}) {
                 </div>
             </footer>
         </main>
-
     </div>
 }
