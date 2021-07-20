@@ -1,0 +1,18 @@
+/**
+ * @description: 全局结构css配置
+ */
+/*常用变量*/
+@import "./reset.scss";
+@import "./basis.scss";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color: #666666;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-family: Arial, sans-serif, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑";
+}
+
+// 滚动条样式
+//@include scroll-style;

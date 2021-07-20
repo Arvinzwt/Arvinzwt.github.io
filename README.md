@@ -1,34 +1,22 @@
-# Blog
+# Arvinzwt.github.io
 
-> My cat&#39;s pajamas jekyll project
+> My kickass Nuxt.js project
 
-## 常用指令
+## Build Setup
 
 ```bash
-# 初始安装执行包
-$ bundle install
+# install dependencies
+$ npm install
 
-# 建设静态网站。
-$ bundle exec jekyll build
-$ bundle exec jekyll b
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# 启动并监听本地提供服务。
-$ bundle exec jekyll serve
-$ bundle exec jekyll s
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-# 启动并监听本地提供服务+草稿。
-$ bundle exec jekyll serve --drafts
-$ bundle exec jekyll s --drafts
-
-# 删除所有生成的文件：目标文件夹，元数据文件，Sass和Jekyll缓存
-$ bundle exec jekyll clean
-
-# 显示帮助，可选地显示给定的子命令，例如 jekyll help build
-$ bundle exec jekyll help
-
-# 输出任何弃用或配置问题
-$ bundle exec jekyll doctor
-
+# generate static project
+$ npm run generate
 ```
 
-有关工作原理的详细说明，请查看 [jekyllrb](https://jekyllrb.com/docs/ruby-101/).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

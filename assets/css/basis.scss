@@ -1,0 +1,96 @@
+/**
+ * @description: 基础css配置
+ */
+/* 主色 */
+
+/* 投影 */
+.shadow-light {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.shadow-basic {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+}
+
+/* 间距 */
+$spacing: 'l', 'r', 't', 'b';
+
+@for $j from 1 through 5 {
+    .m-#{$j} {
+        margin: $j*5px;
+    }
+    .p-#{$j} {
+        padding: $j*5px;
+    }
+
+    @for $i from 1 through length($spacing) {
+        $item: nth($spacing, $i);
+        .m#{$item}-#{$j} {
+            margin: $j*5px;
+        }
+        .p#{$item}-#{$j} {
+            padding: $j*5px;
+        }
+    }
+}
+
+/* 文字对齐 */
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+/* 文字粗细 */
+.font-weight-lighter {font-weight: 100;}
+.font-weight-light {font-weight: 300;}
+.font-weight-normal {font-weight: 400;}
+.font-weight-bold {font-weight: bold;}
+.font-weight-bolder {font-weight: bolder;}
+
+/* 文字倾斜 */
+.font-style-italic {font-style: italic;}
+
+/* 文字划线 */
+.text-through {text-decoration: line-through;}
+.text-underline {text-decoration: underline;}
+
+/* 文字换行溢出处理 */
+.text-ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.text-multi-ellipsis{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+
+/* 文字划过 */
+.cursor-pointer{cursor:pointer;}
+.cursor-default{cursor:default;}
+.cursor-crosshair{cursor:crosshair;}
+.cursor-waitr{cursor:wait;}
+.cursor-help{cursor:help;}
+.cursor-disabled{cursor:not-allowed;}
+
+//滚动条样式
+@mixin scroll-style{
+    /*修改滚动条样式-滚动条整体部分*/
+    ::-webkit-scrollbar {width: 3px;height: 3px;background: transparent;}
+
+    //滚动条的轨道
+    ::-webkit-scrollbar-track {background: transparent;box-shadow: none;}
+
+    //内层轨道，滚动条中间部分
+    ::-webkit-scrollbar-track-piece {}
+
+    //滚动条里面的小方块
+    ::-webkit-scrollbar-thumb {background-color: inherit;box-shadow: none;-webkit-border-radius: 2px;border-radius: 2px;}
+
+    //滚动条里面的小方块-划过
+    ::-webkit-scrollbar-thumb:hover {background-color: inherit;}
+
+    //边角，即两个滚动条的交汇处
+    ::-webkit-scrollbar-corner {background-color: transparent;}
+
+    //滚动条的轨道的两端按钮
+    ::-webkit-scrollbar-button {width: 0;height: 0;background-color: transparent;}
+
+    //两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+    ::-webkit-resizer {width: 0;height: 0;background-color: transparent;}
+}
+
+// 字体图标
+.iconfont {display: inline-flex;justify-content: center;align-items: center;font-size: inherit;}
