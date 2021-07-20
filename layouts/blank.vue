@@ -1,15 +1,8 @@
 <template>
-    <!--默认模板-->
+    <!--空白模板-->
     <el-container class="wmm">
         <el-container class="wmm-container" direction="vertical">
             <nuxt class="wmm-main"/>
         </el-container>
     </el-container>
 </template>
-
-<script>
-export default {
-    components: {}
-}
-</script>
-

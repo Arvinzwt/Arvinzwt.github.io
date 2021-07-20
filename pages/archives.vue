@@ -1,7 +1,7 @@
 <template>
-    <!--index-->
-    <el-main class="wmm-index">
-        index
+    <!--archives-->
+    <el-main class="wmm-archives">
+        archives
     </el-main>
 </template>
 

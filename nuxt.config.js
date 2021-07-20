@@ -53,6 +53,8 @@ module.exports = {
         '@nuxtjs/axios',
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
+        // Doc: https://content.nuxtjs.org
+        '@nuxt/content',
     ],
 
     /*

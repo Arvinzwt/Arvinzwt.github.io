@@ -1,7 +1,7 @@
 <template>
-    <!--index-->
-    <el-main class="wmm-index">
-        index
+    <!--about-->
+    <el-main class="wmm-about">
+        about
     </el-main>
 </template>
 
