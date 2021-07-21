@@ -3,7 +3,7 @@
     <el-container class="wmm" direction="vertical">
         <header-template class="wmm-header"/>
         <nuxt class="wmm-body"/>
-        <footer-template class="wmm-footer"/>
+<!--        <footer-template class="wmm-footer"/>-->
     </el-container>
 </template>
 

@@ -7,6 +7,9 @@
 
 <script>
 export default {
+    async asyncData({$content, params}) {
+
+    },
     components: {},
     data() {
         return {}

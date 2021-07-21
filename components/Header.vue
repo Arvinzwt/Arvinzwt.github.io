@@ -5,7 +5,7 @@
             <nuxt-link class="item" :class="active('index')" to="/">首页</nuxt-link>
         </div>
         <div class="right flex">
-            <!--<div class="item">
+            <div class="item">
                 <el-autocomplete
                         size="mini"
                         v-model.trim="search"
@@ -14,10 +14,10 @@
                         @select="handleSelect">
                     <i slot="prefix" class="el-input__icon el-icon-search"></i>
                     <template slot-scope="{ item }">
-                        {{ item.value }}
+                        {{ item.title }}
                     </template>
                 </el-autocomplete>
-            </div>-->
+            </div>
             <nuxt-link class="item" :class="active('archives')" to="/archives">目录</nuxt-link>
             <nuxt-link class="item" :class="active('about')" to="/about">关于</nuxt-link>
             <!--href="https://github.com/Arvinzwt/Arvinzwt.github.io"-->
@@ -35,19 +35,27 @@ export default {
             }
         }
     },
-    // data() {
-    //     return {
-    //         search: '',
-    //     }
-    // },
-    // methods: {
-    //     // querySearch(queryString, cb) {
-    //     //     cb([{value: '123'}])
-    //     // },
-    //     // handleSelect(item) {
-    //     //     console.log(item)
-    //     // },
-    // }
+    data() {
+        return {
+            search: '',
+        }
+    },
+    methods: {
+        async querySearch(queryString, cb) {
+            let articles = await this.$content({deep: true})
+                    .only(['title', 'slug'])
+                    .sortBy('createdAt', 'asc')
+                    .limit(12)
+                    .search(queryString)
+                    .fetch()
+            cb(articles)
+        },
+        handleSelect(item) {
+            this.$router.push({
+                path: item.path
+            })
+        },
+    }
 }
 </script>
 
@@ -55,16 +63,10 @@ export default {
 .wmm-header {
     .item {
         margin-right: 20px;
-        text-decoration: none;
-        color: inherit;
         font-weight: bold;
 
         &:last-child {
             margin-right: 0;
-        }
-
-        &:hover {
-            color: #409EFF;
         }
 
         &.active {
