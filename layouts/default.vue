@@ -1,15 +1,25 @@
 <template>
     <!--默认模板-->
-    <el-container class="wmm">
-        <el-container class="wmm-container" direction="vertical">
-            <nuxt class="wmm-main"/>
-        </el-container>
+    <el-container class="wmm" direction="vertical">
+        <header-template class="wmm-header"/>
+        <nuxt class="wmm-body"/>
+        <footer-template class="wmm-footer"/>
     </el-container>
 </template>
 
 <script>
+import HeaderTemplate from '~/components/Header.vue'
+import FooterTemplate from '~/components/Footer.vue'
+
 export default {
-    components: {}
+    components: {
+        HeaderTemplate,
+        FooterTemplate,
+    }
 }
 </script>
+
+<style lang="scss">
+
+</style>
 

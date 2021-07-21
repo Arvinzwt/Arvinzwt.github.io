@@ -3,13 +3,8 @@
  */
 
 /* 投影 */
-.shadow-light {
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shadow-basic {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
-}
+.shadow-light {box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);}
+.shadow-basic {box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)}
 
 /* 间距 */
 $spacing: 'l', 'r', 't', 'b';
@@ -32,6 +27,12 @@ $spacing: 'l', 'r', 't', 'b';
         }
     }
 }
+
+/* 布局 */
+.flex{display: flex;align-items: center;}
+.flex-center{display: flex;align-items: center;justify-content: center;}
+.flex-between{display: flex;align-items: center;justify-content: space-between;}
+
 
 /* 文字对齐 */
 .text-left {text-align: left;}
