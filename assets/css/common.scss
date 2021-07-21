@@ -11,6 +11,7 @@ body, html {
     color: #666666;
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
+    line-height: 1.5;
     font-family: Arial, sans-serif, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑";
     background: #fafafa;
 }
@@ -19,7 +20,7 @@ body, html {
 @include scroll-style;
 
 .wmm {
-    min-height: 100vh;
+    height: 100vh;
 
     .wmm-header {
         border-bottom: 1px solid #eeeeee;
@@ -33,3 +34,4 @@ body, html {
         border-top: 1px solid #eeeeee;
     }
 }
+

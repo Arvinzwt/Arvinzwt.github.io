@@ -2,7 +2,10 @@
     <!--头部信息栏-->
     <el-header height="40px" class="flex-between">
         <div class="left">
-            <nuxt-link class="item" :class="active('index')" to="/">首页</nuxt-link>
+            <nuxt-link class="item flex" :class="active('index')" to="/">
+                <span class="iconfont logo"></span>
+                <!--<span>首页</span>-->
+            </nuxt-link>
         </div>
         <div class="right flex">
             <div class="item">
@@ -45,7 +48,7 @@ export default {
             let articles = await this.$content({deep: true})
                     .only(['title', 'slug'])
                     .sortBy('createdAt', 'asc')
-                    .limit(12)
+                    .limit(10)
                     .search(queryString)
                     .fetch()
             cb(articles)
@@ -72,6 +75,14 @@ export default {
         &.active {
             color: #409EFF;
         }
+    }
+
+    .logo {
+        width: 28px;
+        height: 28px;
+        background: url("/images/icon.png") no-repeat center;
+        background-size: 100% 100%;
+        margin-right: 10px;
     }
 }
 </style>

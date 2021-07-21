@@ -1,6 +1,6 @@
 <template>
-    <!--posts-->
-    <el-main class="wmm-posts">
+    <!--article-->
+    <el-main class="wmm-article">
         <nuxt-content :document="article"/>
     </el-main>
 </template>
