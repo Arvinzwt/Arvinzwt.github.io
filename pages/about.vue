@@ -9,6 +9,12 @@
                         使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
                         Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
                         也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
+                        使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
+                        Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
+                        也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
+                        使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
+                        Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
+                        也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
                     </p>
                 </div>
                 <div class="item">
@@ -17,9 +23,18 @@
                         使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
                         Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
                         也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
+                        使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
+                        Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
+                        也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
+                        使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
+                        Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
+                        也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
+                        使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
+                        Tokens，并可以方便地实时预览样式改变后的视觉。同时它还可以基于新的定制样式生成完整的样式文件包，供直接下载使用（关于如何使用下载的主题包，请参考本节「引入自定义主题」部分）。
+                        也可以使用主题编辑器 Chrome 插件，在任何使用 Element 开发的网站上配置并实时预览主题。
                     </p>
                 </div>
-                <div class="item" v-for="item in 30" :key="item">
+                <div class="item">
                     <h1 class="title">联系我</h1>
                     <p class="part">
                         使用在线主题编辑器，可以修改定制 Element 所有全局和组件的 Design
@@ -62,34 +77,40 @@
                 </div>
             </div>
             <div class="right">
-                sdfsdf
+                <scroll-active target=".wmm-about .left"/>
             </div>
         </div>
-        <el-backtop target=".wmm-about"></el-backtop>
     </el-main>
 </template>
 
 <script>
+import ScrollActive from "@/components/common/ScrollActive";
+
 export default {
-    components: {},
-    data() {
-        return {}
+    components: {
+        ScrollActive
     },
-    mounted() {
-    },
-    methods: {}
 }
 </script>
 
 <style lang="scss">
 .wmm-about {
-    border: 1px solid red;
-
     .wmm-wrap {
         max-width: 992px;
-        border: 1px solid blue;
         margin: 0 auto;
         display: flex;
+        align-items: flex-start;
+
+        .left {
+            flex: 2;
+            height: calc(100vh - 90px);
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .right {
+            flex: 1;
+        }
 
         .item {
             .title {
