@@ -1,10 +1,10 @@
 <template>
     <!--头部信息栏-->
-    <el-header height="40px" class="flex-between">
+    <el-header class="flex-between">
         <div class="left">
-            <nuxt-link class="item flex" :class="active('index')" to="/">
+            <nuxt-link class="item flex" to="/">
                 <span class="iconfont logo"></span>
-                <!--<span>首页</span>-->
+                <span>随记</span>
             </nuxt-link>
         </div>
         <div class="right flex">
@@ -21,7 +21,8 @@
                     </template>
                 </el-autocomplete>
             </div>
-            <nuxt-link class="item" :class="active('archives')" to="/archives">目录</nuxt-link>
+            <nuxt-link class="item" :class="active('index')" to="/">首页</nuxt-link>
+            <nuxt-link class="item" :class="active('archives')" to="/archives">分类</nuxt-link>
             <nuxt-link class="item" :class="active('about')" to="/about">关于</nuxt-link>
             <!--href="https://github.com/Arvinzwt/Arvinzwt.github.io"-->
             <el-link class="item" :underline="false">GitHub</el-link>
@@ -34,6 +35,7 @@ export default {
     computed: {
         active() {
             return id => {
+                console.log(this.$route.name)
                 return id === this.$route.name ? 'active' : ''
             }
         }

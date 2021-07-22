@@ -1,13 +1,15 @@
 <template>
     <!--archives-->
     <el-main class="wmm-archives">
+        <summary-template :article="articleMsg" :type="2"/>
+
         <div class="wrap">
             <div class="left">
                 <div class="left-box">
                     <h3 class="archives-title">标签</h3>
-                    <el-tag v-for="item in tags" :key="item.path"
-                            v-show="item.tag" @click="filterArticle(item.tag)"
-                            :type="type(item.tag)" size="mini" effect="dark">{{ item.tag }}
+                    <el-tag v-for="item in tags" :key="item"
+                            v-show="item" @click="filterArticle(item)"
+                            :color="$utils.getType(item)" size="mini">{{ item }}
                     </el-tag>
                 </div>
             </div>
@@ -17,9 +19,9 @@
                     <el-timeline-item
                             v-for="(activity, index) in article"
                             :key="index"
-                            :timestamp="activity.updatedAt">
+                            :timestamp="$utils.formatDate(activity.updatedAt)">
                         <nuxt-link :to="activity.path">{{ activity.title }}</nuxt-link>
-                        <el-tag v-show="activity.tag" :type="type(activity.tag)" size="mini" effect="dark">
+                        <el-tag v-show="activity.tag" :color="$utils.getType(activity.tag)" size="mini">
                             {{ activity.tag }}
                         </el-tag>
                     </el-timeline-item>
@@ -30,31 +32,33 @@
 </template>
 
 <script>
+import SummaryTemplate from '~/components/Summary.vue'
+
 export default {
+    components: {
+        SummaryTemplate,
+    },
     async asyncData({$content}) {
-        const tags = await $content({deep: true}).only(['title', 'slug', 'tag']).sortBy('createdAt', 'asc').fetch();
+        const tags = await $content({deep: true}).only(['tag']).sortBy('createdAt', 'asc').fetch();
         const article = await $content({deep: true}).fetch();
 
         return {
-            tags,
+            tags: Array.from(new Set(tags.map(item => item.tag))),
             article
         }
     },
+    data() {
+        return {
+            articleMsg: {
+                author: 'arvin',
+                description: '装作就像能够方便的找到想要寻找的信息一样的地方~',
+                tag: '',
+                title: '分类',
+                updatedAt: ''
+            },
+        }
+    },
     computed: {
-        type() {
-            return tag => {
-                switch (tag) {
-                    case 'Home':
-                        return 'success';
-                    case 'article-1':
-                        return 'info';
-                    case 'articl-2':
-                        return 'warning';
-                    case 'javascript':
-                        return 'danger';
-                }
-            }
-        },
         articleLength() {
             return this.article.length
         }
@@ -81,7 +85,8 @@ export default {
             flex: 1;
             display: flex;
             justify-content: flex-end;
-            .left-box{
+
+            .left-box {
                 padding: 0 20px;
 
                 .el-tag {

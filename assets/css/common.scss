@@ -11,7 +11,7 @@ body, html {
     color: #666666;
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: Arial, sans-serif, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑";
     background: #fafafa;
 }
@@ -20,14 +20,15 @@ body, html {
 @include scroll-style;
 
 .wmm {
-    height: 100vh;
+    min-height: 100vh;
 
     .wmm-header {
         border-bottom: 1px solid #eeeeee;
     }
 
     .wmm-body {
-
+        margin: 0;
+        padding: 0;
     }
 
     .wmm-footer {
@@ -35,3 +36,7 @@ body, html {
     }
 }
 
+.el-tag{
+    color: #ffffff;
+    border-color: transparent;
+}

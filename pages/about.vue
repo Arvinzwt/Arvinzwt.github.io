@@ -1,6 +1,7 @@
 <template>
     <!--about-->
     <el-main class="wmm-about">
+        <summary-template :article="article" :type="2"/>
         <div class="wmm-wrap">
             <div class="left">
                 <div class="item">
@@ -77,7 +78,7 @@
                 </div>
             </div>
             <div class="right">
-                <scroll-active target=".wmm-about .left"/>
+                <scroll-active target=".wmm-about"/>
             </div>
         </div>
     </el-main>
@@ -85,27 +86,42 @@
 
 <script>
 import ScrollActive from "@/components/common/ScrollActive";
+import SummaryTemplate from '~/components/Summary.vue'
 
 export default {
+    data() {
+        return {
+            article: {
+                author: 'arvin',
+                description: '一些看了和没看差不多的信息~',
+                tag: '',
+                title: '关于',
+                updatedAt: ''
+            },
+        }
+    },
     components: {
-        ScrollActive
+        ScrollActive,
+        SummaryTemplate,
     },
 }
 </script>
 
 <style lang="scss">
 .wmm-about {
+
     .wmm-wrap {
         max-width: 992px;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
+        padding: 20px;
 
         .left {
             flex: 2;
-            height: calc(100vh - 90px);
-            overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
+            //height: calc(100vh - 90px);
+            //overflow-y: scroll;
+            //-webkit-overflow-scrolling: touch;
         }
 
         .right {

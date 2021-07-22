@@ -1,22 +1,28 @@
 <template>
     <!--index-->
     <el-main class="wmm-index">
-        index
+        <!--<summary-template :article="article" :type="2"/>-->
     </el-main>
 </template>
 
 <script>
-export default {
-    async asyncData({$content, params}) {
+import SummaryTemplate from '~/components/Summary.vue'
 
+export default {
+    components: {
+        SummaryTemplate,
     },
-    components: {},
     data() {
-        return {}
-    },
-    mounted() {
-    },
-    methods: {}
+        return {
+            article: {
+                author: 'arvin',
+                description: '不知则问，不能则学',
+                tag: '',
+                title: '随记',
+                updatedAt: ''
+            }
+        }
+    }
 }
 </script>
 
