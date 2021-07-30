@@ -35,7 +35,6 @@ export default {
     computed: {
         active() {
             return id => {
-                console.log(this.$route.name)
                 return id === this.$route.name ? 'active' : ''
             }
         }

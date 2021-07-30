@@ -16,8 +16,6 @@ export default {
         if (!article) {
             return error({statusCode: 404, message: 'Article not found'})
         }
-
-        console.log(article)
         return {
             article
         }
