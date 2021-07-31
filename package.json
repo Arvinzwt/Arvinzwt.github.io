@@ -19,7 +19,8 @@
         "express": "^4.16.4",
         "moment": "^2.29.1",
         "nuxt": "^2.0.0",
-        "prism-themes": "^1.8.0"
+        "prism-themes": "^1.8.0",
+        "three": "^0.131.1"
     },
     "devDependencies": {
         "node-sass": "^4.14.1",

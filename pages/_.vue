@@ -3,6 +3,7 @@
     <el-main class="wmm-article">
         <div class="wrap">
             <nuxt-content :document="article"/>
+            <div id="gitalk-container"></div>
         </div>
     </el-main>
 </template>
@@ -29,8 +30,21 @@ export default {
                 {hid: 'og:description', property: 'og:description', content: this.article.description},
                 {hid: 'twitter:title', name: 'twitter:title', content: this.article.title},
                 {hid: 'twitter:description', name: 'twitter:description', content: this.article.description}
-            ]
+            ],
+
         }
+    },
+    mounted() {
+        const gitalk = new Gitalk({
+            clientID: 'c656259abe587f9b494f',
+            clientSecret: '8d7017bad1009e4c80c6e1c696a3bdb2a7133ab7',
+            repo: 'Arvinzwt.github.io',
+            owner: 'Arvinzwt',
+            admin: ['Arvinzwt'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+        gitalk.render('gitalk-container')
     }
 }
 </script>
@@ -43,17 +57,21 @@ export default {
         margin: 0 auto;
     }
 
+    #gitalk-container {
+        margin-top: 30px;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         padding: 10px 0;
         font-size: 16px;
         font-weight: bold;
     }
 
-    p{
+    p {
         line-height: 1.8;
     }
 
-    a{
+    a {
         color: #409EFF;
     }
 }
