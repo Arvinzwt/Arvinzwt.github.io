@@ -96,7 +96,7 @@ export default {
                 description: '一些看了和没看差不多的信息~',
                 tag: '',
                 title: '关于',
-                updatedAt: ''
+                createdAt: ''
             },
         }
     },

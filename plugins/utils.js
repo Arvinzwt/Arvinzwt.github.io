@@ -20,6 +20,8 @@ export default ({}, inject) => {
                     return '#E6A23C';
                 case 'websocket':
                     return '#F56C6C';
+                case 'threejs':
+                    return '#F56C6C';
             }
         }
     })

@@ -4,9 +4,9 @@
         <img class="summary-bg" :src="url" alt="">
         <div class="summary-main">
             <h2 v-show="article.title">{{ article.title }}</h2>
-            <div v-show="article.updatedAt||article.author">
+            <div v-show="article.createdAt||article.author">
                 <span v-show="type===1">发表于：</span>
-                <span v-show="article.updatedAt">{{ $utils.formatDate(article.updatedAt) }}</span>
+                <span v-show="article.createdAt">{{ $utils.formatDate(article.createdAt) }}</span>
             </div>
             <div>
                 <span v-show="type===1">概述：</span>
@@ -27,7 +27,7 @@ export default {
                     description: '',
                     tag: '',
                     title: '',
-                    updatedAt: ''
+                    createdAt: ''
                 }
             }
         },

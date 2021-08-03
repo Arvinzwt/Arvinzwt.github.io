@@ -19,7 +19,7 @@
                     <el-timeline-item
                             v-for="(activity, index) in article"
                             :key="index"
-                            :timestamp="$utils.formatDate(activity.updatedAt)">
+                            :timestamp="$utils.formatDate(activity.createdAt)">
                         <nuxt-link :to="activity.path">{{ activity.title }}</nuxt-link>
                         <el-tag v-show="activity.tag" :color="$utils.getType(activity.tag)" size="mini">
                             {{ activity.tag }}
@@ -54,7 +54,7 @@ export default {
                 description: '装作就像能够方便的找到想要寻找的信息一样的地方~',
                 tag: '',
                 title: '分类',
-                updatedAt: ''
+                createdAt: ''
             },
         }
     },

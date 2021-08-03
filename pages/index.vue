@@ -76,17 +76,17 @@ export default {
                 }
 
                 // sphere
-                // {
-                //     let phi = Math.acos(-1 + (2 * index) / articles.length);
-                //     let theta = Math.sqrt(articles.length * Math.PI) * phi;
-                //     let oObject3D2 = new THREE.Object3D();
-                //     oObject3D2.position.setFromSphericalCoords(800, phi, theta);
-                //     sphere.copy(oObject3D2.position).multiplyScalar(2);
-                //     oObject3D2.lookAt(sphere);
-                //     targets.sphere.push(oObject3D2);
-                // }
-                //
-                // // helix
+                {
+                    let phi = Math.acos(-1 + (2 * index) / articles.length);
+                    let theta = Math.sqrt(articles.length * Math.PI) * phi;
+                    let oObject3D2 = new THREE.Object3D();
+                    oObject3D2.position.setFromSphericalCoords(800, phi, theta);
+                    sphere.copy(oObject3D2.position).multiplyScalar(2);
+                    oObject3D2.lookAt(sphere);
+                    targets.sphere.push(oObject3D2);
+                }
+
+                // helix
                 // {
                 //     let theta = index * 0.175 + Math.PI;
                 //     let y = -(index * 8) + 450;
@@ -199,12 +199,6 @@ export default {
 
 <style lang="scss">
 .wmm-index {
-    //#container {
-    //    border: 1px solid red;
-    //    width: 992px;
-    //    margin: 0 auto;
-    //}
-
     .article {
         width: 992px;
         height: 135px;
