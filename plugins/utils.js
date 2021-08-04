@@ -21,7 +21,7 @@ export default ({}, inject) => {
                 case 'websocket':
                     return '#F56C6C';
                 case 'threejs':
-                    return '#F56C6C';
+                    return 'rgb(0,127,127)';
             }
         }
     })

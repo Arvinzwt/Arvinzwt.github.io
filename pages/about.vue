@@ -85,7 +85,7 @@
 </template>
 
 <script>
-import ScrollActive from "@/components/common/ScrollActive";
+import ScrollActive from "~/components/ScrollActive";
 import SummaryTemplate from '~/components/Summary.vue'
 
 export default {

@@ -1,6 +1,7 @@
 <template>
     <!--article-->
     <el-main class="wmm-article">
+        <summary-template :article="article"/>
         <div class="wrap">
             <nuxt-content :document="article"/>
             <div id="gitalk-container"></div>
@@ -9,7 +10,12 @@
 </template>
 
 <script>
+import SummaryTemplate from '~/components/Summary.vue'
+
 export default {
+    components:{
+        SummaryTemplate
+    },
     async asyncData({$content, params, error}) {
         const path = `/${params.pathMatch || 'index'}`
         const [article] = await $content({deep: true}).where({path}).fetch()
@@ -55,6 +61,7 @@ export default {
     .wrap {
         max-width: 992px;
         margin: 0 auto;
+        padding: 30px 0;
     }
 
     #gitalk-container {
@@ -63,12 +70,14 @@ export default {
 
     h1, h2, h3, h4, h5, h6 {
         padding: 10px 0;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
     }
 
     p {
         line-height: 1.8;
+        text-indent: 30px;
+        font-size: 14px;
     }
 
     a {
