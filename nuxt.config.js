@@ -88,9 +88,13 @@ module.exports = {
         }
     },
 
-   /*
-   ** Define server access host and port
-   */
+    generate: {
+        dir: 'docs'
+    },
+
+    /*
+    ** Define server access host and port
+    */
     server: {
         port: 4000, // default: 3000
         host: "localhost", // default: '0.0.0.0',
